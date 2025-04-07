@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  caddy:
+    image: caddy:latest
+    ports:
+      - "7912:443" # Maps port 7912 on the host to port 443 inside the caddy container (typically HTTPS).
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile # Mounts the local 'Caddyfile' to the configuration directory inside the container.
+      - caddy_data:/data # Creates a named volume 'caddy_data' and mounts it to the '/data' directory in the container for persistent data.
+      - caddy_config:/config # Creates a named volume 'caddy_config' and mounts it to the '/config' directory in the container for persistent configuration.
+    depends_on:
+      - spoolman # Specifies that the 'caddy' service should start after the 'spoolman' service.
+    networks:
+      - internal # Assigns the 'caddy' service to the 'internal' network.
+
+  spoolman:
+    image: ghcr.io/donkie/spoolman:latest
+    restart: unless-stopped # Configures the container to restart automatically unless it is explicitly stopped.
+    volumes:
+      - type: bind # Specifies the type of volume mount as a host bind mount.
+        source: ./data # Specifies the local directory './data' on the host.
+        target: /home/app/.local/share/spoolman # Specifies the target directory inside the 'spoolman' container.
+    environment:
+      - TZ=Europe/Paris # Sets the timezone environment variable inside the 'spoolman' container to 'Europe/Paris'.
+    networks:
+      - internal # Assigns the 'spoolman' service to the 'internal' network.
+
+volumes:
+  caddy_data: # Defines a named volume called 'caddy_data'.
+  caddy_config: # Defines a named volume called 'caddy_config'.
+
+networks:
+  internal: # Defines a network called 'internal'.

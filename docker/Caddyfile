@@ -1,0 +1,4 @@
+https://spoolman.local:443 {
+    tls internal
+    reverse_proxy spoolman:8000
+}
