@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Bambu Spoolman Pal</string>
+    <string name="about_screen_title">Bambu Spoolman Pal - Acerca de</string>
+    <string name="disclaimer_text">
+    Esta aplicación es un proyecto de código abierto desarrollado independientemente por la comunidad.
+    De ninguna manera está afiliada, asociada, autorizada, respaldada ni conectada oficialmente con Bambu Lab ni con ninguna de sus filiales o empresas afiliadas.
+
+    El nombre Bambu Lab, así como los nombres de productos, logotipos y marcas asociados, son propiedad de Bambu Lab y sus respectivos dueños.
+
+    Esta aplicación se proporciona "tal cual" y sin ninguna garantía, expresa o implícita, incluyendo, pero sin limitarse a, las garantías de comerciabilidad, idoneidad para un propósito particular y no infracción.
+
+    Los desarrolladores de esta aplicación no serán responsables en ningún caso de ningún daño directo, indirecto, consecuente, punitivo o de otro tipo, que resulte del uso o la imposibilidad de usar esta aplicación.
+
+    El uso de esta aplicación es bajo su propio riesgo.
+</string>
+    <string name="how_to_title">¿Quién soy?</string>
+    <string name="how_to">"
+    <![CDATA[
+        Bambu Spoolman Pal - Versión %s<br><br>
+
+        El objetivo de esta aplicación es automatizar el seguimiento de las <a href='https://eu.store.bambulab.com/es-es/collections/bambu-lab-3d-printer-filament'>bobinas oficiales de Bambu Lab</a> con <a href='https://github.com/Donkie/Spoolman/wiki'>Spoolman</a>.<br><br>
+
+        Escanee sus bobinas con su teléfono habilitado para NFC para extraer un identificador, la densidad, el peso inicial y la longitud.<br><br>
+
+        El uso de la <a href='https://github.com/Donkie/SpoolmanDB'>base de datos de filamentos Spoolman</a> permite ofrecer una selección relevante de nombres para los filamentos para referenciarlos.<br><br>
+
+        El peso actual se puede ajustar a través de los botones, el área de entrada, el control deslizante o mediante el reconocimiento por IA de los valores de una balanza.<br><br>
+
+        Una vez configurado, el acceso a las API de Spoolman permite gestionar el filamento y la bobina automáticamente.<br>
+        Mediante la configuración, esta comunicación se puede automatizar con cada modificación de peso.<br><br>
+        Para más información: <a href='https://github.com/MrBambuSpoolPal/MrBambuSpoolPal-BambuSpoolPal_AndroidApp/wiki'>wiki</a>.<br>
+        Para cualquier <a href='https://github.com/MrBambuSpoolPal/MrBambuSpoolPal-BambuSpoolPal_AndroidApp/issues'>contacto o preguntas</a>.<br>
+    ]]>"
+</string>
+    <string name="spool_situation">Situación del carrete</string>
+    <string name="remaining_filament_length_m">Longitud restante del filamento: %1$s m (%2$s %%)</string>
+    <string name="spoolman_communication">Comunicación Spoolman</string>
+    <string name="check">Comprobar</string>
+    <string name="update">Actualizar</string>
+    <string name="send_to_backend">Enviar al backend</string>
+    <string name="filament_weight_g">Peso del filamento: %1$s g</string>
+    <string name="length_m">Longitud: %1$s m</string>
+    <string name="db_id">ID DB: %1$s</string>
+    <string name="manufacturer_id_filament_id_spool_id">ID del fabricante: %1$s ID del filamento: %2$s ID del carrete: %3$s</string>
+    <string name="diameter_mm">Diámetro: %1$s mm</string>
+    <string name="spool_weight_g">Peso del carrete: %1$s g</string>
+    <string name="hex_value">Valor hex: %1$s</string>
+    <string name="type">Tipo: %1$s</string>
+    <string name="uid">UID: %1$s</string>
+    <string name="rfid_spool_details">Detalles del carrete RFID</string>
+    <string name="production">Producción: %1$s</string>
+    <string name="n_a">N/D</string>
+    <string name="tag_data_or_weight_is_missing">¡Faltan los datos del tag o el peso!</string>
+    <string name="error_during_upload">Error durante la carga: %1$s</string>
+    <string name="count_of_currently_known_filaments">Número de filamentos conocidos: %1$s</string>
+    <string name="language_french">Francés</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">Inglés</string>
+    <string name="language">Idioma</string>
+    <string name="accept_self_signed_certificates">Aceptar certificados auto-firmados</string>
+    <string name="auto_trigger_spoolman_changes">Activar automáticamente los cambios de Spoolman</string>
+    <string name="bambu_spool_pal_backend_optional">Backend Bambu Spool Pal (opcional)</string>
+    <string name="spoolman_api">API Spoolman</string>
+    <string name="spoolman_database">Base de datos Spoolman</string>
+    <string name="bambu_manufacturer_manufacturer_value_in_the_database">Valor del fabricante en la base de datos</string>
+    <string name="full_url_of_spoolman_filament_database">URL completa de la base de datos de filamentos Spoolman</string>
+    <string name="bambu_spoolman_pal_settings">Configuración de Bambu Spoolman Pal</string>
+    <string name="spoolman_base_url_https_required">URL base Spoolman (se requiere https)</string>
+    <string name="backend_api_url">URL del API del Backend</string>
+    <string name="fetch_spoolman_database">Obtener base de datos de Spoolman</string>
+    <string name="data_fetched_successfully">¡Datos obtenidos con éxito!</string>
+    <string name="slider_to_adjust_percentage">Deslizador para ajustar el porcentaje</string>
+    <string name="data_uploaded_successfully">¡Datos cargados con éxito!</string>
+    <string name="choose_database_item">Elegir elemento de la base de datos</string>
+    <string name="unknown_color">Color desconocido</string>
+    <string name="show_options">Mostrar opciones</string>
+    <string name="vendor_name_is_unknown">Nombre del proveedor desconocido</string>
+    <string name="unable_to_get_vendor_id_for">No se pudo obtener el ID del proveedor para %1$s</string>
+    <string name="configuration_saved_successfully">¡Configuración guardada con éxito!</string>
+    <string name="changes_have_been_discarded">Los cambios han sido descartados.</string>
+    <string name="actual_g">Peso actual</string>
+    <string name="open_the_camera">Abrir la cámara</string>
+    <string name="settings">Configuración</string>
+    <string name="date_not_available">Fecha no disponible</string>
+    <string name="invalid_datetime">Fecha/hora inválida</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="error_loading_filament_data">Error al cargar los datos del filamento: %1$s</string>
+    <string name="error_fetching_data">Error al obtener los datos %1$s</string>
+    <string name="unexpected_error_occurred">Ocurrió un error inesperado.</string>
+    <string name="unknown_error">Error desconocido: %1$s</string>
+    <string name="client_error">Error del cliente: %1$s</string>
+    <string name="server_error">Error del servidor: %1$s</string>
+    <string name="network_error">Error de red: %1$s</string>
+    <string name="error_while_saving_preferences">Error al guardar las preferencias</string>
+    <string name="error_while_initialising_preferences">Error al inicializar las preferencias</string>
+    <string name="error_while_resetting_preferences">Error al restablecer las preferencias</string>
+    <string name="error_while_loading_preferences">Error al cargar las preferencias</string>
+    <string name="validation_error">Error de validación: %1$s</string>
+    <string name="filament_database_id_is_unknown">El ID de la base de datos del filamento es desconocido</string>
+    <string name="unable_to_get_filament_id_for">No se pudo obtener el ID del filamento para %1$s</string>
+    <string name="spool_unique_id_is_unknown">El ID único del carrete es desconocido</string>
+    <string name="spool_was_created">Se creó el carrete %1$d</string>
+    <string name="spool_was_updated">Se actualizó el carrete %1$d</string>
+    <string name="spool_not_found_in_spoolman">Carrete no encontrado en Spoolman</string>
+    <string name="you_need_to_scan_a_spool_first">Primero debes escanear un carrete</string>
+    <string name="error_while_creating_or_updating_spool">Error al crear o actualizar el carrete: %1$s</string>
+    <string name="error_while_retrieving_information_on_spool">Error al recuperar información del carrete: %1$s</string>
+    <string name="show_spool_uid">Mostrar UID del carrete</string>
+    <string name="spool_rfid_tag">Etiqueta RFID del carrete</string>
+    <string name="there_was_an_error_reading_tag">Hubo un error al leer la etiqueta: %1$s</string>
+    <string name="no_nfc_tag_detected">No se detectó ninguna etiqueta NFC</string>
+    <string name="error_disabling_nfc_dispatch">Error al desactivar el envío NFC: %1$s</string>
+    <string name="nfc_not_available_on_this_device">NFC no disponible en este dispositivo</string>
+    <string name="local_filament_database_is_empty_please_use_fetch_spoolman_database_from_configuration_screen">La base de datos local de filamentos está vacía, por favor, utilice la opción "Descargar base de datos de Spoolman" desde la pantalla de configuración.</string>
+    <string name="spool_scan_finished">Escaneo de la bobina finalizado</string>
+    <string name="same_spool_has_been_scanned">La misma bobina ya ha sido escaneada</string>
+    <string name="auto_checking_spool">Comprobando la bobina automáticamente</string>
+    <string name="auto_updating_spool">Actualizando la bobina automáticamente</string>
+    <string name="unable_to_read_rfid_tag_please">No se pudo leer la etiqueta RFID. Por favor, no se mueva durante al menos 2 segundos</string>
+    <string name="i_agree">Estoy de acuerdo</string>
+    <string name="welcome_to_bambuspoolpal">¡Bienvenido a BambuSpoolPal!</string>
+</resources>

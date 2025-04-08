@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Bambu Spoolman Pal</string>
+    <string name="about_screen_title">Bambu Spoolman Pal - About</string>
+    <string name="disclaimer_text">
+    This application is an open-source project developed independently by the community.
+    It is in no way affiliated with, associated with, authorized, endorsed by, or officially connected with Bambu Lab or any of its subsidiaries or affiliated companies.
+
+    The Bambu Lab name, as well as related product names, logos, and brands, are the property of Bambu Lab and their respective owners.
+
+    This application is provided "as is" and without any warranty, express or implied, including but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+    The developers of this application shall in no event be liable for any direct, indirect, consequential, punitive, or other damages resulting from the use of or inability to use this application.
+
+    Use of this application is at your own risk.
+</string>
+    <string name="how_to_title">Who am I?</string>
+    <string name="how_to">"
+    <![CDATA[
+        Bambu Spoolman Pal - Version %s<br><br>
+
+        The purpose of this application is to automate the tracking of <a href='https://us.store.bambulab.com/collections/bambu-lab-3d-printer-filament?skr=yes'>official Bambu Lab spools</a> with <a href='https://github.com/Donkie/Spoolman/wiki'>Spoolman</a>.<br><br>
+
+        Scan your spools with your NFC-enabled phone to extract an identifier, density, initial weight, and length.<br><br>
+
+        Using the <a href='https://github.com/Donkie/SpoolmanDB'>Spoolman filament database</a> allows for a relevant selection of names for the filaments for referencing.<br><br>
+
+        The current weight can be adjusted through buttons, the input field, the slider, or by AI recognition of values from a scale.<br><br>
+
+        Once configured, access to the Spoolman APIs allows for automatic management of the filament and spool.<br>
+        Through configuration, this communication can be automated with each weight modification.<br><br>
+        For more information: <a href='https://github.com/MrBambuSpoolPal/MrBambuSpoolPal-BambuSpoolPal_AndroidApp/wiki'>wiki</a>.<br>
+        For any <a href='https://github.com/MrBambuSpoolPal/MrBambuSpoolPal-BambuSpoolPal_AndroidApp/issues'>contact or questions</a>.<br>
+    ]]>"
+</string>
+    <string name="spool_situation">Spool Situation</string>
+    <string name="remaining_filament_length_m">Remaining Filament Length: %1$s m (%2$s %%)</string>
+    <string name="spoolman_communication">Spoolman Communication</string>
+    <string name="check">Check</string>
+    <string name="update">Update</string>
+    <string name="send_to_backend">Send to Backend</string>
+    <string name="filament_weight_g">Filament Weight: %1$s g</string>
+    <string name="length_m">Length: %1$s m</string>
+    <string name="db_id">DB Id: %1$s</string>
+    <string name="manufacturer_id_filament_id_spool_id">Manufacturer Id: %1$s, Filament Id: %2$s, Spool Id: %3$s</string>
+    <string name="diameter_mm">Diameter: %1$s mm</string>
+    <string name="spool_weight_g">Spool Weight: %1$s g</string>
+    <string name="hex_value">Hex Value: %1$s</string>
+    <string name="type">Type: %1$s</string>
+    <string name="uid">UID: %1$s</string>
+    <string name="rfid_spool_details">RFID Spool Details</string>
+    <string name="production">Production: %1$s</string>
+    <string name="n_a">N/A</string>
+    <string name="tag_data_or_weight_is_missing">Tag data or weight is missing!</string>
+    <string name="error_during_upload">Error during upload: %1$s</string>
+    <string name="count_of_currently_known_filaments">Count of currently known filaments: %1$s</string>
+    <string name="language_french">French</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_english">English</string>
+    <string name="language">Language</string>
+    <string name="accept_self_signed_certificates">Accept self-signed certificates</string>
+    <string name="auto_trigger_spoolman_changes">Auto-Trigger Spoolman changes</string>
+    <string name="bambu_spool_pal_backend_optional">Bambu Spool Pal Backend (optional)</string>
+    <string name="spoolman_api">Spoolman API</string>
+    <string name="spoolman_database">Spoolman Database</string>
+    <string name="bambu_manufacturer_manufacturer_value_in_the_database">Manufacturer value in the database</string>
+    <string name="full_url_of_spoolman_filament_database">Full URL of Spoolman filament database</string>
+    <string name="bambu_spoolman_pal_settings">Bambu Spoolman Pal - Settings</string>
+    <string name="spoolman_base_url_https_required">Spoolman Base URL (HTTPS required)</string>
+    <string name="backend_api_url">Backend API URL</string>
+    <string name="fetch_spoolman_database">Fetch Spoolman database</string>
+    <string name="data_fetched_successfully">Data fetched successfully!</string>
+    <string name="slider_to_adjust_percentage">Slider to adjust percentage</string>
+    <string name="data_uploaded_successfully">Data uploaded successfully!</string>
+    <string name="choose_database_item">Choose database item</string>
+    <string name="unknown_color">Unknown Color</string>
+    <string name="show_options">Show options</string>
+    <string name="vendor_name_is_unknown">Vendor Name is unknown</string>
+    <string name="unable_to_get_vendor_id_for">Unable to get Vendor ID for %1$s</string>
+    <string name="configuration_saved_successfully">Configuration saved successfully!</string>
+    <string name="changes_have_been_discarded">Changes have been discarded.</string>
+    <string name="actual_g">Actual</string>
+    <string name="open_the_camera">Open the Camera</string>
+    <string name="settings">Settings</string>
+    <string name="date_not_available">Date not available</string>
+    <string name="invalid_datetime">Invalid datetime</string>
+    <string name="select_language">Select Language</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_loading_filament_data">Error loading filament data: %1$s</string>
+    <string name="error_fetching_data">Error fetching data: %1$s</string>
+    <string name="unexpected_error_occurred">Unexpected error occurred.</string>
+    <string name="unknown_error">Unknown Error: %1$s</string>
+    <string name="client_error">Client Error: %1$s</string>
+    <string name="server_error">Server Error: %1$s</string>
+    <string name="network_error">Network Error: %1$s</string>
+    <string name="error_while_saving_preferences">Error while saving preferences</string>
+    <string name="error_while_initialising_preferences">Error while initializing preferences</string>
+    <string name="error_while_resetting_preferences">Error while resetting preferences</string>
+    <string name="error_while_loading_preferences">Error while loading preferences</string>
+    <string name="validation_error">Validation Error: %1$s</string>
+    <string name="filament_database_id_is_unknown">Filament Database ID is unknown</string>
+    <string name="unable_to_get_filament_id_for">Unable to get Filament ID for %1$s</string>
+    <string name="spool_unique_id_is_unknown">Spool Unique ID is unknown</string>
+    <string name="spool_was_created">Spool %1$d was created</string>
+    <string name="spool_was_updated">Spool %1$d was updated</string>
+    <string name="spool_not_found_in_spoolman">Spool not found in Spoolman</string>
+    <string name="you_need_to_scan_a_spool_first">You need to scan a spool first</string>
+    <string name="error_while_creating_or_updating_spool">Error while creating or updating spool: %1$s</string>
+    <string name="error_while_retrieving_information_on_spool">Error while retrieving information on spool: %1$s</string>
+    <string name="show_spool_uid">Show Spool UID</string>
+    <string name="spool_rfid_tag">Spool RFID Tag</string>
+    <string name="there_was_an_error_reading_tag">There was an error reading tag: %1$s</string>
+    <string name="no_nfc_tag_detected">No NFC tag detected</string>
+    <string name="error_disabling_nfc_dispatch">Error disabling NFC dispatch: %1$s</string>
+    <string name="nfc_not_available_on_this_device">NFC not available on this device</string>
+    <string name="local_filament_database_is_empty_please_use_fetch_spoolman_database_from_configuration_screen">Local Filament Database is empty, please use Fetch Spoolman database from Configuration screen</string>
+    <string name="spool_scan_finished">Spool scan finished</string>
+    <string name="same_spool_has_been_scanned">Same spool has been scanned</string>
+    <string name="auto_checking_spool">Auto checking spool</string>
+    <string name="auto_updating_spool">Auto updating spool</string>
+    <string name="unable_to_read_rfid_tag_please">Unable to read RFID tag. Please don\'t move for at least 2 seconds</string>
+    <string name="i_agree">I agree</string>
+    <string name="welcome_to_bambuspoolpal">Welcome To BambuSpoolPal !</string>
+</resources>
