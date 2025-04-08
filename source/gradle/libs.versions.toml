@@ -1,0 +1,94 @@
+# Define version numbers for libraries and plugins
+[versions]
+activityCompose = "1.10.1"                # Version of the activity-compose library
+agp = "8.8.2"                             # Android Gradle Plugin version
+appcompat = "1.7.0"                        # Version of AndroidX AppCompat
+bcprovJdk15to18 = "1.72"                   # Version of BouncyCastle provider for Java
+composeBom = "2025.03.01"                  # Jetpack Compose BOM (Bill of Materials) version
+coreKtx = "1.15.0"                         # Version of AndroidX Core KTX
+espressoCore = "3.6.1"                     # Version of Espresso core for UI testing
+gson = "2.10.1"                            # Version of Gson for JSON parsing
+junit = "4.13.2"                           # Version of JUnit for testing
+junitVersion = "1.2.1"                     # Version of JUnit for AndroidX testing
+kotlin = "2.1.10"                          # Kotlin version
+ksp = "2.1.10-1.0.31"                     # Kotlin Symbol Processing (KSP) version
+lifecycle = "2.8.7"                        # Version of AndroidX Lifecycle components
+moshi = "1.15.0"                          # Version of Moshi for JSON serialization
+navigationCompose = "2.8.9"                # Version of Jetpack Compose Navigation
+retrofit = "2.9.0"                         # Retrofit version for networking
+runtimeLivedata = "1.7.8"                  # LiveData version for Compose
+material-icons-extended = "1.7.8"          # Material icons extended for Compose
+cameraCore = "1.4.2"                       # CameraX core library version
+cameraLifecycle = "1.4.2"                  # CameraX lifecycle library version
+cameraView = "1.4.2"                       # CameraX view library version
+coreKtxVersion = "1.6.1"                   # Core KTX version (for test)
+coreAnimation = "1.0.0"                    # Core animation library version
+
+# Define library dependencies with references to versions
+[libraries]
+# Core Android & Kotlin Libraries
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+# Jetpack Compose Libraries
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-ui-text = { group = "androidx.compose.ui", name = "ui-text" }
+androidx-ui-unit = { group = "androidx.compose.ui", name = "ui-unit" }
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-ui-geometry = { group = "androidx.compose.ui", name = "ui-geometry" } # Added for handling geometry
+
+# Network & Serialization Libraries
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converterMoshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshiKotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+# Security Libraries
+bcprov-jdk15to18 = { module = "org.bouncycastle:bcprov-jdk15to18", version.ref = "bcprovJdk15to18" }
+
+# KSP Annotation Processor Libraries
+moshi-kotlin-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
+
+# Testing Libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+# Debugging Libraries
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+# Additional Libraries
+material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "material-icons-extended" }
+mlkit-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version = "16.0.1" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraCore" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraLifecycle" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
+
+# CameraX specific libraries
+camerax-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCore" }
+core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxVersion" }
+
+# Jetpack Compose Animation
+androidx-compose-animation-core = { group = "androidx.compose.animation", name = "animation-core" }
+
+# Core Animation Library
+androidx-core-animation = { group = "androidx.core", name = "core-animation", version.ref = "coreAnimation" }
+
+# Define plugins and their versions
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

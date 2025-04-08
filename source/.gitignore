@@ -1,0 +1,72 @@
+# ------------------------------
+# Android Studio / IntelliJ
+# ------------------------------
+.idea/
+*.iml
+*.iws
+
+# ------------------------------
+# Gradle
+# ------------------------------
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+gradle.properties    # <- uniquement si tu y mets des infos sensibles (API keys, etc.)
+
+# Wrapper logs
+gradle/wrapper/gradle-wrapper.properties.lock
+
+# ------------------------------
+# Signatures / Sécurité
+# ------------------------------
+*.jks
+*.keystore
+*.pem
+*.p12
+*.key
+*.crt
+
+# ------------------------------
+# Outputs
+# ------------------------------
+*.apk
+*.ap_
+*.aab
+
+# ------------------------------
+# Logs / Misc
+# ------------------------------
+*.log
+*.tmp
+*.swp
+.DS_Store
+*.orig
+
+# ------------------------------
+# Environnements / Secrets
+# ------------------------------
+.env
+.env.*
+secrets.properties
+
+# ------------------------------
+# OS files
+# ------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ------------------------------
+# Kotlin/Android specific
+# ------------------------------
+.kts.cache/
+
+# Jetpack Compose preview cache
+**/build/.cxx/
+**/build/intermediates/
+**/build/tmp/
+**/build/generated/
+**/build/kotlin/
